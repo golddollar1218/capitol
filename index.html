@@ -346,7 +346,7 @@
   }
 
   /* ---------- FLOOR (community) ---------- */
-  .gang-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+  .gang-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px; max-width:640px; margin:0 auto; }
   .gang-card{
     background:var(--card); border:2.5px solid var(--ink); border-radius:var(--radius-md);
     padding:28px 18px; text-align:center; text-decoration:none; color:var(--ink);
@@ -433,7 +433,6 @@
     <ul class="nav-links" id="nav-links">
       <li><a href="#profile">About</a></li>
       <li><a href="#bounty">Tokenomics</a></li>
-      <li><a href="#job">Launch</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a class="ext" href="https://x.com/capitol_x" target="_blank" rel="noopener">Follow ↗</a></li>
     </ul>
@@ -442,12 +441,6 @@
       <div class="nav-socials">
         <a href="https://x.com/capitol_x" target="_blank" rel="noopener" aria-label="X (Twitter)">
           <svg viewBox="0 0 24 24" fill="none"><path d="M18.42 2h3.08l-7.3 8.34L22.8 22h-6.72l-5.26-6.87L4.76 22H1.68l7.8-8.92L1 2h6.88l4.76 6.28L18.42 2Zm-1.18 18h1.86L7.86 3.9H5.86L17.24 20Z" fill="currentColor"/></svg>
-        </a>
-        <a href="https://www.instagram.com/capitolmarkets/" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="6" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.15" fill="currentColor"/></svg>
-        </a>
-        <a href="https://www.tiktok.com/@capitolmarkets" target="_blank" rel="noopener" aria-label="TikTok">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M16.6 5.82c-1-.94-1.5-2.2-1.6-3.62h-3.03v13.44c0 1.55-1.25 2.8-2.8 2.8a2.8 2.8 0 0 1 0-5.6c.28 0 .55.04.8.12V9.87a5.9 5.9 0 0 0-.8-.06 5.86 5.86 0 1 0 5.86 5.86V9.6a8.9 8.9 0 0 0 4.87 1.45V8a5.4 5.4 0 0 1-3.3-2.18Z" fill="currentColor"/></svg>
         </a>
         <a href="https://t.me/capitol_tg" target="_blank" rel="noopener" aria-label="Telegram">
           <svg viewBox="0 0 24 24" fill="none"><path d="M21.9 3.6L2.7 11.1c-1.2.5-1.2 1.2-.2 1.5l4.9 1.5 1.9 5.8c.2.6.4.8.8.8.5 0 .7-.2 1-.5l2.4-2.3 4.9 3.6c.9.5 1.5.2 1.8-.8l3.2-15c.4-1.3-.4-1.9-1.5-1.1Zm-3.3 3.4L9.2 14.2c-.3.3-.3.7-.3 1l.3 3.4-1.5-4.7 12.3-7.7c.4-.3.7-.1.4.2Z" fill="currentColor"/></svg>
@@ -580,23 +573,6 @@
   </div>
 </div>
 
-<section id="job">
-  <div class="wrap">
-    <div class="job reveal">
-      <span class="sec-eyebrow">The Big Day</span>
-      <h2>$CAPITOL hits the tape.</h2>
-      <div class="job-date">THURSDAY · SEPTEMBER 10, 2026 · 15:00 UTC</div>
-      <div class="countdown" id="countdown">
-        <div class="cd-cell"><b id="cd-days">00</b><span>Days</span></div>
-        <div class="cd-cell"><b id="cd-hours">00</b><span>Hours</span></div>
-        <div class="cd-cell"><b id="cd-mins">00</b><span>Minutes</span></div>
-        <div class="cd-cell"><b id="cd-secs">00</b><span>Seconds</span></div>
-      </div>
-      <p class="job-note" id="job-note">Set an alarm. The bell only rings once.</p>
-    </div>
-  </div>
-</section>
-
 <section id="gang">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -609,16 +585,6 @@
         <div class="gang-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M18.42 2h3.08l-7.3 8.34L22.8 22h-6.72l-5.26-6.87L4.76 22H1.68l7.8-8.92L1 2h6.88l4.76 6.28L18.42 2Zm-1.18 18h1.86L7.86 3.9H5.86L17.24 20Z" fill="currentColor"/></svg></div>
         <b>X / Twitter</b>
         <small>@capitol_x</small>
-      </a>
-      <a class="gang-card reveal" href="https://www.instagram.com/capitolmarkets/" target="_blank" rel="noopener">
-        <div class="gang-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="6" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" stroke="#fff" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.15" fill="#fff"/></svg></div>
-        <b>Instagram</b>
-        <small>@capitolmarkets</small>
-      </a>
-      <a class="gang-card reveal" href="https://www.tiktok.com/@capitolmarkets" target="_blank" rel="noopener">
-        <div class="gang-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M16.6 5.82c-1-.94-1.5-2.2-1.6-3.62h-3.03v13.44c0 1.55-1.25 2.8-2.8 2.8a2.8 2.8 0 0 1 0-5.6c.28 0 .55.04.8.12V9.87a5.9 5.9 0 0 0-.8-.06 5.86 5.86 0 1 0 5.86 5.86V9.6a8.9 8.9 0 0 0 4.87 1.45V8a5.4 5.4 0 0 1-3.3-2.18Z" fill="#fff"/></svg></div>
-        <b>TikTok</b>
-        <small>@capitolmarkets</small>
       </a>
       <a class="gang-card reveal" href="https://t.me/capitol_tg" target="_blank" rel="noopener">
         <div class="gang-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21.9 3.6L2.7 11.1c-1.2.5-1.2 1.2-.2 1.5l4.9 1.5 1.9 5.8c.2.6.4.8.8.8.5 0 .7-.2 1-.5l2.4-2.3 4.9 3.6c.9.5 1.5.2 1.8-.8l3.2-15c.4-1.3-.4-1.9-1.5-1.1Zm-3.3 3.4L9.2 14.2c-.3.3-.3.7-.3 1l.3 3.4-1.5-4.7 12.3-7.7c.4-.3.7-.1.4.2Z" fill="#fff"/></svg></div>
@@ -634,7 +600,7 @@
     <div class="foot-top">
       <div>
         <div class="foot-brand">Capitol</div>
-        <p class="foot-tagline">Capitol Markets. Fair launch, Thursday Sept 10, 15:00 UTC.</p>
+        <p class="foot-tagline">Capitol Markets. Fair launch on RobinHoodChain.</p>
         <a class="buy-btn foot-buy" href="https://fomo.family/tokens/robinhood/0xdef283d6336e4b4e8b61e9db1f7ab62279d85af6" target="_blank" rel="noopener">Buy $CAPITOL ↗</a>
       </div>
       <div class="foot-col">
@@ -642,7 +608,6 @@
         <ul>
           <li><a href="#profile">About</a></li>
           <li><a href="#bounty">Tokenomics</a></li>
-          <li><a href="#job">Launch</a></li>
           <li><a href="#gallery">Gallery</a></li>
         </ul>
       </div>
@@ -650,8 +615,6 @@
         <h4>Community</h4>
         <ul>
           <li><a href="https://x.com/capitol_x" target="_blank" rel="noopener">X / Twitter</a></li>
-          <li><a href="https://www.instagram.com/capitolmarkets/" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.tiktok.com/@capitolmarkets" target="_blank" rel="noopener">TikTok</a></li>
           <li><a href="https://t.me/capitol_tg" target="_blank" rel="noopener">Telegram</a></li>
         </ul>
       </div>
@@ -675,38 +638,6 @@
 <script>
 (function(){
   document.getElementById('year').textContent = new Date().getFullYear();
-
-  var target = Date.UTC(2026, 8, 10, 15, 0, 0); // Thu Sep 10 2026, 15:00 UTC
-  var els = {
-    d: document.getElementById('cd-days'),
-    h: document.getElementById('cd-hours'),
-    m: document.getElementById('cd-mins'),
-    s: document.getElementById('cd-secs')
-  };
-  var note = document.getElementById('job-note');
-  var pad = function(n){ return String(n).padStart(2,'0'); };
-
-  function tick(){
-    var now = Date.now();
-    var diff = target - now;
-    if (diff <= 0){
-      els.d.textContent = '00'; els.h.textContent = '00';
-      els.m.textContent = '00'; els.s.textContent = '00';
-      note.textContent = "It's live. $CAPITOL is on RobinHoodChain — verify the contract on @capitol_x before you touch anything.";
-      clearInterval(timer);
-      return;
-    }
-    var s = Math.floor(diff / 1000);
-    var d = Math.floor(s / 86400); s -= d*86400;
-    var h = Math.floor(s / 3600); s -= h*3600;
-    var m = Math.floor(s / 60); s -= m*60;
-    els.d.textContent = pad(d);
-    els.h.textContent = pad(h);
-    els.m.textContent = pad(m);
-    els.s.textContent = pad(s);
-  }
-  tick();
-  var timer = setInterval(tick, 1000);
 
   var burger = document.getElementById('burger');
   var navLinks = document.getElementById('nav-links');
