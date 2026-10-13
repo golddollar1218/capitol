@@ -193,6 +193,12 @@
 
   /* ---------- SECTION HEADS ---------- */
   .sec-head{ text-align:center; max-width:640px; margin:0 auto 50px; }
+  #profile .sec-head{ margin-bottom:36px; }
+  .tweet-embed{
+    display:flex; justify-content:center;
+    max-width:550px; margin:0 auto;
+  }
+  .tweet-embed .twitter-tweet{ margin:0 auto !important; }
   .sec-eyebrow{
     display:inline-block; font-family:'Baloo 2'; font-weight:700; font-size:0.72rem;
     letter-spacing:0.08em; text-transform:uppercase; color:var(--forest-deep);
@@ -473,6 +479,12 @@
       <h2>The building has a ticker.</h2>
       <p class="sec-desc">Capitol Markets is the floor where the chart wears the dome. $CAPITOL is the name on the tape — loud, green, and open to anyone who shows up when the bell rings.</p>
     </div>
+    <div class="tweet-embed reveal">
+      <blockquote class="twitter-tweet" data-dnt="true" data-theme="light" data-conversation="none">
+        <p lang="en" dir="ltr">capitol markets is a useless / stonks type narrative.<br><br>thank u <a href="https://x.com/vladtenev">@vladtenev</a>.<br><br>0x8189ac93c8943fd506bb347a75502f8fb5a055b3</p>
+        &mdash; capitol markets (@capitolmarkets_) <a href="https://x.com/capitolmarkets_/status/2109848673324806579">October 13, 2026</a>
+      </blockquote>
+    </div>
   </div>
 </section>
 
@@ -659,6 +671,7 @@
   </div>
 </footer>
 
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script>
 (function(){
   document.getElementById('year').textContent = new Date().getFullYear();
